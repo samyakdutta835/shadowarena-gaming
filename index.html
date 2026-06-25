@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>ShadowArena - Epic Games Made For True Gamers!</title>
+  <meta name="title" content="ShadowArena - Epic Games Made For True Gamers!">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="150" height="64" alt="ShadowArena home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#tournament" class="navbar-link" data-nav-link>tournament</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#news" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./assets/HTML/contact.html" class="navbar-link" data-nav-link>contact</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./assets/HTML/about.html" class="navbar-link" data-nav-link>about</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="./assets/HTML/team.html" class="btn" data-btn>join our team</a>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <div class="hero has-before" id="home">
+        <div class="container">
+
+          <p class="section-subtitle">
+            COMPETE • CONQUER • DOMINATE
+          </p>
+
+          <h1 class="h1 title hero-title">
+            Enter The Shadow Arena <br>
+            Where Legends Rise
+          </h1>
+
+          <p class="hero-text">
+            Join thousands of gamers and compete in epic tournaments with players around the world.
+          </p>
+
+          <a href="./assets/HTML/team.html" class="btn" data-btn>
+            Join The Arena
+          </a>
+
+          <div class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="850" height="414" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- featured section -->
+      <section class="section games">
+
+        <div class="container">
+
+          <p class="section-subtitle">Popular Games</p>
+
+          <h2 class="h2 section-title">
+            Featured <span class="span">Games</span>
+          </h2>
+
+          <div class="games-grid">
+
+            <div class="game-card">
+              <img src="./assets/images/game1.png">
+              <h3>BGMI</h3>
+            </div>
+
+            <div class="game-card">
+              <img src="./assets/images/game2.png">
+              <h3>Valorant</h3>
+            </div>
+
+            <div class="game-card">
+              <img src="./assets/images/game3.png">
+              <h3>CS2</h3>
+            </div>
+
+            <div class="game-card">
+              <img src="./assets/images/game4.png">
+              <h3>Fortnite</h3>
+            </div>
+
+            <div class="game-card">
+              <img src="./assets/images/game5.png">
+              <h3>Call Of Duty</h3>
+            </div>
+
+            <div class="game-card">
+              <img src="./assets/images/game6.png">
+              <h3>Apex Legends</h3>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #UPCOMING
+      -->
+
+      <section class="section upcoming" aria-labelledby="upcoming-label" id="tournament">
+        <div class="container">
+
+          <p class="section-subtitle" id="upcoming-label" data-reveal="bottom">
+            Upcoming Matches
+          </p>
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Battles Extreme <br> Masters <span class="span">Tournament</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ol class="upcoming-list">
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-1.png" width="86" height="81" loading="lazy"
+                  alt="Purple Death Cadets" class="card-banner">
+
+                <h3 class="h3 card-title">Shadow Reapers</h3>
+
+                <div class="card-meta">Group 04 | Match 06th</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="10:00">10:00</time>
+
+                <time class="date" datetime="2022-05-25">25TH May 2026</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-2.png" width="86" height="81" loading="lazy"
+                  alt="Trigger Brain Squad" class="card-banner">
+
+                <h3 class="h3 card-title">Phantom Force</h3>
+
+                <div class="card-meta">Group 04 | Match 06th</div>
+
+              </div>
+
+            </li>
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-3.png" width="86" height="81" loading="lazy"
+                  alt="The Black Hat Hackers" class="card-banner">
+
+                <h3 class="h3 card-title">Cyber Titans</h3>
+
+                <div class="card-meta">Group 05 | Match 02nd</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="12:30">12:30</time>
+
+                <time class="date" datetime="2024-01-10">10TH Jan 2027</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-4.png" width="86" height="81" loading="lazy"
+                  alt="Your Worst Nightmare" class="card-banner">
+
+                <h3 class="h3 card-title">Apex Predators</h3>
+
+                <div class="card-meta">Group 05 | Match 02nd</div>
+
+              </div>
+
+            </li>
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-5.png" width="86" height="81" loading="lazy"
+                  alt="Witches And Quizards" class="card-banner">
+
+                <h3 class="h3 card-title">Night Raiders</h3>
+
+                <div class="card-meta">Group 02 | Match 03rd</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="04:20">04:20</time>
+
+                <time class="date" datetime="2024-12-15">15th Dec 2026</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-6.png" width="86" height="81" loading="lazy"
+                  alt="Resting Bitch Faces" class="card-banner">
+
+                <h3 class="h3 card-title">Inferno Squad</h3>
+
+                <div class="card-meta">Group 02 | Match 03rd</div>
+
+              </div>
+
+            </li>
+
+          </ol>
+
+        </div>
+      </section>
+
+      <!-- stat -->
+
+      <section class="section stats">
+
+        <div class="container">
+
+          <div class="stats-grid">
+
+            <div class="stat-card">
+              <h1>50K+</h1>
+              <p>Players</p>
+            </div>
+
+            <div class="stat-card">
+              <h1>150+</h1>
+              <p>Tournaments</p>
+            </div>
+
+            <div class="stat-card">
+              <h1>500+</h1>
+              <p>Teams</p>
+            </div>
+
+            <div class="stat-card">
+              <h1>$15M+</h1>
+              <p>Prize Pool</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- live stream -->
+
+      <section class="section">
+
+        <div class="container">
+
+          <p class="section-subtitle">
+            Live Streams
+          </p>
+
+          <h2 class="h2 section-title">
+            Watch <span class="span">Live</span>
+          </h2>
+
+          <div class="news-list">
+
+            <div class="news-card">
+              <img src="./assets/images/live1.png">
+              <div class="card-content">
+                <h3>Valorant Championship Finals</h3>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <img src="./assets/images/live2.png">
+              <div class="card-content">
+                <h3>BGMI Invitational 2026</h3>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <img src="./assets/images/live3.png">
+              <div class="card-content">
+                <h3>COD World League</h3>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- 
+        - #NEWS
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <p class="section-subtitle" data-reveal="bottom">What's On Our Mind</p>
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            News And <span class="span">Headlines</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="news-list">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news1.png" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">COD Mobile</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Call Of Duty Season 8 Revealed</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Discover the latest maps, weapons and battle pass rewards arriving this season.
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news2.png" width="600" height="400" loading="lazy"
+                    alt="How To Start Initiating An Startup In Few Days." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">BGMI</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">BGMI World Cup 2026 Announced</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Top teams from around the world are preparing for the biggest esports event.
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news3.png" width="600" height="400" loading="lazy"
+                    alt="Financial Experts Support Help You To Find Out." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Valorant</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Valorant Champions Break Viewership Records</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Millions of fans tuned in as the finals became one of the biggest esports events ever.
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- sponsor section -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <p class="section-subtitle">
+        Partners
+      </p>
+
+      <h2 class="h2 section-title">
+        Our <span class="span">Sponsors</span>
+      </h2>
+
+      <div class="sponsor-grid">
+
+        <div class="sponsor-card">
+          <img src="./assets/images/s1.png">
+        </div>
+
+        <div class="sponsor-card">
+          <img src="./assets/images/s2.png">
+        </div>
+
+        <div class="sponsor-card">
+          <img src="./assets/images/s3.png">
+        </div>
+
+        <div class="sponsor-card">
+          <img src="./assets/images/s4.png">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="150" height="73" loading="lazy" alt="ShadowArena logo">
+          </a>
+
+          <p class="footer-text">
+            ShadowArena is the ultimate destination for competitive gamers. Join tournaments, stay updated with the
+            latest esports news, and become part of the next generation of champions.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+
+            <li>
+              <a href="#tournament" class="footer-link">Tournaments</a>
+            </li>
+
+            <li>
+              <a href="./assets/HTML/gallery.html" class="footer-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="./assets/HTML/help.html" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="./assets/HTML/privacy.html" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="./assets/HTML/privacy.html" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="./assets/HTML/about.html" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="./assets/HTML/contact.html" class="footer-link">Contact Us</a>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              Hooghly, West Bengal, India
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@ShadowArena.com" class="contact-link">support@shadowarena.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Phone:</span>
+
+            <a href="tel:+12345678910" class="contact-link"> (+91) 9876543210</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2026 ShadowArena. All Rights Reserved.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <div id="particles-js"></div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+
+</html>

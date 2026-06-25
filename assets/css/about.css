@@ -1,0 +1,328 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Oxanium',sans-serif;
+}
+
+body{
+background:#090014;
+color:white;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(10,10,25,.7);
+backdrop-filter:blur(20px);
+border-bottom:1px solid rgba(255,255,255,.1);
+z-index:1000;
+}
+
+.nav-container{
+height:90px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo img{
+width:180px;
+}
+
+.navbar{
+display:flex;
+gap:40px;
+list-style:none;
+}
+
+.navbar a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.navbar a:hover,
+.navbar .active{
+color:#b24dff;
+text-shadow:0 0 15px #b24dff;
+}
+
+.btn{
+padding:15px 35px;
+background:linear-gradient(90deg,#9d00ff,#00d9ff);
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.4s;
+display:inline-block;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 30px #9d00ff;
+}
+
+/* HERO */
+
+.hero{
+padding-top:180px;
+padding-bottom:100px;
+text-align:center;
+}
+
+.subtitle{
+letter-spacing:4px;
+color:#b24dff;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#b24dff;
+}
+
+.hero-text{
+max-width:700px;
+margin:auto;
+color:#ccc;
+}
+
+/* STORY */
+
+.story{
+padding:100px 0;
+}
+
+.story-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.story-content h2{
+font-size:50px;
+margin-bottom:20px;
+color:#b24dff;
+}
+
+.story-content p{
+color:#ccc;
+margin-bottom:20px;
+}
+
+.story-content img{
+width:100%;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.1);
+}
+
+/* STATS */
+
+.stats{
+padding:100px 0;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.stat-card{
+padding:50px;
+text-align:center;
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+transition:.4s;
+}
+
+.stat-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 35px #9d00ff;
+}
+
+.stat-card h1{
+font-size:55px;
+color:#b24dff;
+}
+
+/* FEATURES */
+
+.features{
+padding:100px 0;
+}
+
+.features h1{
+font-size:50px;
+text-align:center;
+margin-bottom:60px;
+color:#b24dff;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.feature-card{
+padding:50px 30px;
+text-align:center;
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+transition:.4s;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 35px #9d00ff;
+}
+
+.feature-card i{
+font-size:50px;
+color:#b24dff;
+margin-bottom:25px;
+}
+
+.feature-card h2{
+font-size:25px;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:100px;
+background:#0d0d20;
+padding-top:80px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:50px;
+padding-bottom:60px;
+}
+
+.footer-logo{
+width:200px;
+margin-bottom:20px;
+}
+
+footer h3{
+color:#b24dff;
+margin-bottom:20px;
+}
+
+footer ul{
+list-style:none;
+}
+
+footer li{
+margin-bottom:10px;
+}
+
+footer a{
+color:#ccc;
+text-decoration:none;
+transition:.3s;
+}
+
+footer a:hover{
+color:#b24dff;
+}
+
+.copyright{
+text-align:center;
+padding:25px;
+border-top:1px solid rgba(255,255,255,.1);
+color:#aaa;
+}
+
+/* TABLET */
+
+@media(max-width:991px){
+
+.hero h1{
+font-size:55px;
+}
+
+.story-content{
+grid-template-columns:1fr;
+}
+
+.btn{
+display:none;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-container{
+flex-direction:column;
+height:auto;
+padding:20px 0;
+}
+
+.navbar{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+.hero{
+padding-top:220px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.features h1,
+.story-content h2{
+font-size:40px;
+}
+
+}
+
+@media(max-width:500px){
+
+.hero h1{
+font-size:34px;
+}
+
+.stat-card h1{
+font-size:40px;
+}
+
+.feature-card h2{
+font-size:20px;
+}
+
+}

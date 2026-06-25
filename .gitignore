@@ -1,0 +1,31 @@
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+*.temp
+
+# Environment
+.env
+
+# Node
+node_modules/
+
+# Cache
+.cache/
+
+# npm
+npm-debug.log*
+
+# Yarn
+yarn-error.log
